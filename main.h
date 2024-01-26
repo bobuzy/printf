@@ -6,6 +6,7 @@
 
 int _printf(const char *format, ...);
 int printchar(char c);
-int printstring(char *str);
+int printstr(char *str);
+int printdig(int num);
 
 #endif
