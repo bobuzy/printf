@@ -7,6 +7,12 @@
 #include <limits.h>
 #include <stdio.h>
 
+/**
+ * struct fmt - Struct name
+ * @abc: List of format specifiers
+ * @f: The function associated
+ */
+
 typedef struct fmt
 {
 	char abc;
