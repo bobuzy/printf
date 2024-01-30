@@ -19,7 +19,7 @@ int (*check_fmt_spec(char s))(va_list)
 	{ 'o', printoctal },
 	{ 'x', printhex_lower},
 	{ 'X', printhex_upper},
-	{ 'b', printbinary }
+	{ 'b', printbinary },
 	{ 0, NULL }
 	};
 
