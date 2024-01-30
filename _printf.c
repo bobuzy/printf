@@ -12,7 +12,6 @@ int _printf(const char *format, ...)
 	va_list args;
 	int i = 0;
 	int output = 0;
-	get_spec f = {0};
 
 	va_start(args, format);
 
@@ -27,6 +26,8 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
+			get_spec f = {0};
+
 			if (format[i + 1] == '\0')
 			{
 				return (-1);
