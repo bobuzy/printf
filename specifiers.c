@@ -15,10 +15,10 @@ int (*check_fmt_spec(char s))(va_list)
 	{ '%', printpercent },
 	{ 'd', printdigit },
 	{ 'i', printdigit },
-	{ 'u', print_unsigned },
-	{ 'o', print_octal },
-	{ 'x', print_hex_lower},
-	{ 'X', print_hex_upper},
+	{ 'u', printunsigned },
+	{ 'o', printoctal },
+	{ 'x', printhex_lower},
+	{ 'X', printhex_upper},
 	{ 0, NULL }
 	};
 
