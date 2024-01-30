@@ -31,5 +31,6 @@ int printoctal(va_list args);
 int printhex_upper(va_list args);
 int printhex_lower(va_list args);
 int printhex(va_list args, int uppercase);
+int printbinary(va_list args);
 
 #endif
