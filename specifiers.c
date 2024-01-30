@@ -15,7 +15,7 @@ int (*check_fmt_spec(char s))(va_list)
 	{ '%', printpercent },
 	{ 'd', printdigit },
 	{ 'i', printdigit },
-	{ 0, NULL }
+	{ NULL, NULL }
 	};
 
 	int i = 0;
