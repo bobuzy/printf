@@ -19,12 +19,13 @@ int (*check_fmt_spec(char s))(va_list)
 	{ 'o', printoctal },
 	{ 'x', printhex_lower},
 	{ 'X', printhex_upper},
+	{ 'b', printbinary }
 	{ 0, NULL }
 	};
 
 	int i = 0;
 
-	while (i < 10)
+	while (i < 11)
 	{
 		if (s == specs[i].abc)
 		{
