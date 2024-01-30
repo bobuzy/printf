@@ -20,13 +20,9 @@ int _printf(const char *format, ...)
 		return (-1);
 	}
 	if (!format || (format[0] == '%' && !format[1]))
-	{
 		return (-1);
-	}
 	if (format[0] == '%' && format[1] == ' ' && !format[2])
-	{
 		return (-1);
-	}
 
 	while (format[i])
 	{
@@ -43,6 +39,10 @@ int _printf(const char *format, ...)
 			if (f.f != NULL)
 			{
 				output += f.f(args);
+			}
+			else
+			{
+				output += write(1, &format[i], 1);
 			}
 			i++;
 		}
