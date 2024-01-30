@@ -26,5 +26,10 @@ int printstring(va_list);
 int printpercent(va_list args);
 int printdigit(va_list args);
 int printdig(int n);
+int printunsigned(va_list args);
+int printoctal(va_list args);
+int printhex_upper(va_list args);
+int printhex_lower(va_list args);
+int printhex(va_list args, int uppercase);
 
 #endif
