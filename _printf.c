@@ -16,9 +16,7 @@ int _printf(const char *format, ...)
 	va_start(args, format);
 
 	if (format == NULL || (format[0] == '%' && !format[1]))
-	{
 		return (-1);
-	}
 
 	while (format[i])
 	{
@@ -28,6 +26,11 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
+			if (format[i + 1] == '\0')
+			{
+				return (-1);
+			}
+
 			get_spec f = {0};
 
 			f.f = check_fmt_spec(format[i + 1]);
